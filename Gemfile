@@ -4,9 +4,9 @@ gemspec
 
 gem 'coveralls', require: false
 gem 'faraday-retry', require: false
-gem 'rack', '>= 3.0.8'
+gem 'rack', '>= 3.0.14'
 
 group :test do
   gem 'webmock'
-  gem 'sinatra'
+  gem 'sinatra', '>= 3.0.14'
 end
