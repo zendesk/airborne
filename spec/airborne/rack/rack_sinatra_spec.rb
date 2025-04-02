@@ -2,6 +2,10 @@ require 'json'
 require 'sinatra'
 
 class SampleApp < Sinatra::Application
+  configure  do
+    set :host_authorization, permitted_hosts: ['example.org']
+  end
+
   before do
     content_type 'application/json'
   end
